@@ -1,0 +1,46 @@
+﻿test_id,category,test,test_steps,expected_result,priority,status
+BB-001,Visual QA,18 screen screenshot check,Compare each current 393x852 source export to implemented view,All design deviations documented; no invented existing details,P0,Not run
+BB-002,Visual QA,Safe areas,Check iPhone reference and Android status/navigation bars,No hidden interactive elements,P0,Not run
+BB-003,Visual QA,Large labels,Inspect long Filipino and English text and text scaling,No truncated task instructions or clipped primary action,P1,Not run
+BB-004,Visual QA,Owl consistency,Compare reference mascot assets across screens,Consistent original mascot; no substituted AI-created graphic,P1,Not run
+BB-005,Visual QA,Consistent navigation,"Check titles, tabs, back buttons across student pages",Navigation positions predictable,P1,Not run
+BB-006,Visual QA,Touch targets,Inspect buttons and lesson selection controls,"Targets at least 44x44 reference points, preferably larger for children",P1,Not run
+BB-007,Visual QA,Orientation and viewport,Check narrow and tall Android viewports,Layout responsive; no forced 393x852 runtime clipping,P1,Not run
+BB-008,Navigation,Student entry,Tap student role from onboarding,Student profile and language then student home,P0,Not run
+BB-009,Navigation,Guardian entry,Tap parent role,Adult sign in then only linked child pages,P0,Not run
+BB-010,Navigation,Teacher entry,Tap teacher role,Teacher sign in then class dashboard,P0,Not run
+BB-011,Navigation,Hub tabs,Tap each visible student navigation item,Each destination correct; no dead ends,P0,Not run
+BB-012,Navigation,Locked level,Tap a level with unmet prerequisite,Explanation overlay; no activity unlock,P0,Not run
+BB-013,Navigation,Resume level,Leave and return to in-progress level,Exact step restored,P0,Not run
+BB-014,Navigation,Back button,Use visible back and Android hardware back,Consistent prior route or confirmation,P0,Not run
+BB-015,Navigation,Completed review,Open a previously mastered lesson,Review available; mastery preserved,P1,Not run
+BB-016,Navigation,Quiz result route,Finish final item of level,"Results appears exactly once, then level map",P0,Not run
+BB-017,Learning and assessment,Filipino and English independence,Complete Level 1 in Filipino then switch English,English Level 1 unchanged,P0,Not run
+BB-018,Learning and assessment,Language content independence,Inspect sound and task examples in both tracks,Correct reviewed language-specific content and audio,P0,Not run
+BB-019,Learning and assessment,Five item check,Finish level assessment,"Five independent scored questions, not only guided practice",P0,Not run
+BB-020,Learning and assessment,Pass unlock,Score >=4 on 5 items and save,Level complete; next level unlocked,P0,Not run
+BB-021,Learning and assessment,Retry recommendation,Score <4 on 5 items,Friendly remediation and practice; no shame language,P0,Not run
+BB-022,Learning and assessment,Correct feedback,Submit correct item,Explicit praise and Continue,P1,Not run
+BB-023,Learning and assessment,Incorrect feedback,Submit incorrect item,Hint and Try Again,P1,Not run
+BB-024,Learning and assessment,Answer selection,Choose then change before submit,Selected state visible and editable,P1,Not run
+BB-025,Learning and assessment,Double submit,Tap Check rapidly twice,Single scored attempt and stable progress,P0,Not run
+BB-026,Learning and assessment,Reattempt old level,Retry completed level and get lower score,Completed status preserved,P0,Not run
+BB-027,Learning and assessment,18 level integrity,Load each level from 1 to 18,All levels have valid data and no missing routes,P0,Not run
+BB-028,Learning and assessment,Published content validation,Mark sample-only items as draft,Draft items cannot be released as reviewed production content,P0,Not run
+BB-029,Audio/accessibility,Model audio,Tap playback on each activity,Correct prerecorded audio and visible error fallback,P0,Not run
+BB-030,Audio/accessibility,Microphone denied,Deny microphone permission,Lesson can complete via no-mic alternative,P0,Not run
+BB-031,Audio/accessibility,Recorder state,Allow mic; record then stop/play back,Clear indicators; no hidden or automatic recording,P0,Not run
+BB-032,Audio/accessibility,No false speech score,Complete optional read aloud,No unsupported pronunciation percentage,P0,Not run
+BB-033,Audio/accessibility,Motion reduction,Set reduced motion,Feedback still works without required animation,P1,Not run
+BB-034,Audio/accessibility,Screen reader labels,Navigate interactive buttons with accessibility tools,Accessible names and reading order,P1,Not run
+BB-035,Audio/accessibility,Non-drag alternative,Use word puzzle without dragging,Tap or reordering control provides equivalent completion,P1,Not run
+BB-036,Storage and security,Offline progress,Complete practice with network disabled,Progress saved locally,P0,Not run
+BB-037,Storage and security,Force-close resume,Force-close mid-lesson and reopen,Step and answers restored safely,P0,Not run
+BB-038,Storage and security,Sync conflicts,Create two offline sessions and sync,"No lost mastered state, deterministic conflict resolution",P0,Not run
+BB-039,Storage and security,Parent isolation,Attempt direct/API access to unrelated student,Denied by backend policies,P0,Not run
+BB-040,Storage and security,Teacher roster isolation,Attempt to access learner not enrolled in class,Denied by backend policies,P0,Not run
+BB-041,Storage and security,No client service-role key,Inspect built Android/web assets,No privileged database secret,P0,Not run
+BB-042,Storage and security,Privacy deletion,Use guardian deletion control,Data deleted or bounded to disclosed retention process,P0,Not run
+BB-043,Storage and security,Child voice privacy,Check recording network traffic and local files,No voice upload by default; transparent optional retention,P0,Not run
+BB-044,Storage and security,Missing asset recovery,Remove/interrupt an audio/image asset,Accessible Retry and navigation; no blank screen,P1,Not run
+BB-045,Storage and security,Android release test,Build and install on real Android phone,"Navigation, storage and audio work in built APK/AAB",P0,Not run

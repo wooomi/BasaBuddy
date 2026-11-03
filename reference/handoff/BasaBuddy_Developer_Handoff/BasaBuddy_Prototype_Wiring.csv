@@ -1,0 +1,49 @@
+﻿source_frame,control_label_or_action,target_frame_or_state,prototype_action,trigger
+S01,Continue,S02,Navigate to,On tap
+S02,Student role,P01 Student profile chooser,Navigate to,On tap
+S02,Parent role,P02 Adult login,Navigate to,On tap
+S02,Teacher role,T01 Teacher login,Navigate to,On tap
+P01 Student profile chooser,Choose existing profile,L01 Language selection,Navigate to,On tap
+P01 Student profile chooser,Add profile,P03 Guardian create-profile,Navigate to (adult gate),On tap
+L01 Language selection,Filipino or English,S03,Navigate to,On tap
+S03,Continue learning,S04,Navigate to,On tap
+S03,Levels tab,S04,Navigate to,On tap
+S03,Quest tab,S15,Navigate to,On tap
+S03,Journey tab,S16,Navigate to,On tap
+S03,Dictionary shortcut,S10,Navigate to,On tap
+S04,Unlocked level card,L02 Lesson introduction,Navigate to,On tap
+S04,Locked level card,O01 Locked explanation,Open overlay,On tap
+L02 Lesson introduction,Start,Lesson activity by configured type,Navigate to,On tap
+S05,Continue,Next configured activity,Navigate to,On tap
+S06,Listen & Repeat,S07,Navigate to,On tap
+S06,Puzzle,S08,Navigate to,On tap
+S06,Continue,Next configured activity,Navigate to,On tap
+S07,Play audio,S07 playing state,Change variant,On tap
+S07,Record,S07 recording state,Change variant,On tap
+S07,Next,Next configured activity,Navigate to,On tap
+S08,Check correct,O02 Correct feedback,Open overlay,On tap
+S08,Check incorrect,O03 Try again feedback,Open overlay,On tap
+S08,Continue,Next configured activity,Navigate to,On tap
+S09,Self-check / Continue,Next configured activity,Navigate to,On tap
+S10,Back,Previous screen (history),Back,On tap
+S11,Next page,S11 next page variant,Change variant,On tap
+S11,Take quiz,S12,Navigate to,On tap
+S12,Submit answer,O02/O03 answer feedback,Open overlay,On tap
+S12,Finish question set,R01 Level Results,Navigate to,On tap
+S13,Finish task,Next configured activity or R01,Navigate to,On tap
+S14,Check sentence,O02/O03 answer feedback,Open overlay,On tap
+S14,Finish task,Next configured activity or R01,Navigate to,On tap
+S15,Start quest,Configured review activity,Navigate to,On tap
+S15,Back home,S03,Navigate to,On tap
+S16,Resume / Review,S04 or lesson,Navigate to,On tap
+R01 Level Results,Next level,S04,Navigate to,On tap
+R01 Level Results,Practice again,Current or preceding activity,Navigate to,On tap
+P02 Adult login,Successful parent sign-in,P04 Parent home,Navigate to,On tap
+P04 Parent home,Reading progress,S17,Navigate to,On tap
+S17,Choose linked child,S17 child report variant,Change variant,On tap
+S17,Family practice,P05 At-home exercises,Navigate to,On tap
+T01 Teacher login,Successful authorized sign-in,S18,Navigate to,On tap
+S18,Class card,T02 Class detail,Navigate to,On tap
+S18,Student card,T03 Learner detail,Navigate to,On tap
+S18,Assign lesson,T04 Lesson assignment,Navigate to,On tap
+T04 Lesson assignment,Save and assign,T05 Assignment confirmation,Navigate to,On tap

@@ -1,0 +1,19 @@
+﻿id,previously_reported_screen_type,proposed_primary_function,proposed_actions,proposed_destinations,audit_priority_not_a_verified_issue
+S01,Onboarding,Intro with owl and a single primary Continue,Continue,S02,"Verify full safe area, mascot clipping, CTA contrast and readable instruction"
+S02,Choose User,"Role selection; Student, Parent, Teacher",Student / Parent / Teacher,Student → student profile; Parent → adult auth; Teacher → teacher auth,Ensure choosing an adult role never grants access without authentication
+S03,Student Home,Resume current level and show lightweight progress,Continue / Levels / Quest / Journey / Dictionary,S04 / S15 / S16 / S10,Check consistent header and bottom tab positions; avoid multiple competing main CTAs
+S04,Learning Levels,"18 sequential levels, chosen-language progress",Select unlocked level,S05 or next activity template,"Audit row/card size, locked contrast, long titles and completed badges"
+S05,Syllable Lesson,Show phoneme/syllable instruction and teacher-model audio,Listen / Tap syllables / Continue,S06 or S08,Ensure all tiles remain readable and playable; do not assume Filipino syllables equal English phonics
+S06,Word Reading,"Word, image, audio and guided blending",Listen / Repeat / Continue,S07 or S10,Confirm font/line-height and picture-word alignment; avoid tiny navigation arrows
+S07,Listen & Repeat,Model playback and optional child voice replay,Play / Record / Stop / Replay / Next,S09 or lesson next step,"Show microphone permission, recording state, fallback to non-mic path"
+S08,Syllable Puzzle,Build a word using syllable/phoneme chips,Select / Drag / Reset / Check,S06 or activity completion,Make a tap-based alternative to drag-and-drop; show selected and incorrect states
+S09,Read Aloud,Short prompt and optional reading check,Hear model / Record / Replay / Self-check,S12 or next step,No unsupported automatic pronunciation scoring; check microphone and offline states
+S10,Picture Dictionary,Picture and category browsing with exact bilingual assets,Choose category / Play audio / Back,Return to prior student route,Audit grid density and language-specific narration; no automatic text-only translations
+S11,Story Reading,Short story with page progression and narrator audio,Play / Pause / Next page / Quiz,S12,Verify long-content scrolling and bottom safe-area CTA; do not place overlays on story text
+S12,Story Quiz,One age-appropriate question per screen,Choose answer / Check / Next,Proposed Results → S04/S03,Use plain-language feedback; choice state and retry state must be visible
+S13,Find the Word,Find requested word in limited choices,Tap word / Retry / Continue,Next lesson step or proposed Results,"Avoid tiny targets, hidden answer cues, and confusing mixed languages"
+S14,Sentence Builder,Arrange word chips in grammatical order,Select / Swap / Undo / Check,Next lesson step or proposed Results,Support taps and reorder accessible controls in addition to dragging
+S15,Daily Quest,Optional daily practice cycle and positive completion,Start quest / Return Home,Selected activity → S03,No penalties for inactivity; visibly distinguish available versus done
+S16,Reading Journey,Show mastery and completed skills by language,Continue / Review / Level,S04 or matching lesson,"Ensure charts use labels, not color alone; distinguish progress from grade score"
+S17,Parent Report,"Child progress, skills and family practice suggestions",Choose child / View skills / Home,Proposed Parent Home,Adult-only viewing; explain scores and dates; verify no teacher-only functions
+S18,Teacher Dashboard,"Authorized class summary, assignments and learner progress",Choose class / Learner / Assign lesson,Proposed Class / Learner / Assignment screens,No student data without authorized enrollment and access checks
